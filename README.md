@@ -1,68 +1,82 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+A full-stack, real-time chat application inspired by Discord.
+Built using MongoDB, Express, React, Node, Redux Toolkit, and Socket.IO for persistent and real-time messaging.
 
-## Available Scripts
+This project includes authentication, servers, channels, messages, Redux state management, and a responsive UI.
 
-In the project directory, you can run:
+🚀 Features
+🔐 Authentication
 
-### `npm start`
+Email + Password (JWT-based)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Google OAuth (optional)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Protected API routes
 
-### `npm test`
+💬 Real-time Chat
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Socket.IO-powered communication
 
-### `npm run build`
+Send, receive, edit & delete messages
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Per-channel message history stored in MongoDB
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Typing indicators
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Online/offline presence
 
-### `npm run eject`
+🏠 Servers & Channels
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Create / Join servers (guilds)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Create channels inside servers
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Real-time updates when switching channels
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+🎨 UI & State
 
-## Learn More
+React + Redux Toolkit
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Global state for user, channels, and servers
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Material UI / Tailwind (optional)
 
-### Code Splitting
+Mobile-responsive layout
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+📁 Additional Features
 
-### Analyzing the Bundle Size
+Image/file upload (Multer or Firebase Storage)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Timestamps & user avatars
 
-### Making a Progressive Web App
+Dark mode (optional)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Voice channel prototype (optional WebRTC)
 
-### Advanced Configuration
+🛠️ Tech Stack
+Frontend
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+React (CRA or Vite)
 
-### Deployment
+Redux Toolkit
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+React Router
 
-### `npm run build` fails to minify
+Socket.IO Client
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Axios
+
+Material UI (optional)
+
+Backend
+
+Node.js
+
+Express
+
+MongoDB + Mongoose
+
+Socket.IO
+
+JWT Authentication
+
+Multer (file uploads)
